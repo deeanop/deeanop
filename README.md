@@ -37,6 +37,9 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
   <img src="https://img.shields.io/badge/Simulink-%23ED7B24.svg?style=flat-square&logo=MathWorks&logoColor=white" alt="Simulink" />
   <img src="https://img.shields.io/badge/PlatformIO-%23F5A25D.svg?style=flat-square&logo=PlatformIO&logoColor=white" alt="PlatformIO" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Verilog-%2300599C?style=flat-square&logo=cpu&logoColor=white" alt="Verilog" />
+  <img src="https://img.shields.io/badge/SystemVerilog-%23214960?style=flat-square&logo=cpu&logoColor=white" alt="SystemVerilog" />
+  <img src="https://img.shields.io/badge/VHDL-%23008080?style=flat-square&logo=circuit&logoColor=white" alt="VHDL" />
 </p>
 
 #### 🌐 Networking & Automation
