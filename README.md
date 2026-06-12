@@ -13,6 +13,14 @@ I'm Deean. There is my journey into computer engineering.
   </a>
 </p>
 
+### 💻 About me
+I'm currently study Computer Engineering at Polytechnic University of Timisoara, and my principal fields are hardware description, embedded systems, networks, and digital signal processing. I'm also interested in software development, data mining and machine learning.
+
+*   📍 Location: Timișoara, România
+*   🚀 Presently working in developing and automating complex networks
+*   🧠 Enhancing knowledge in embedded systems, digital communications, machine learning
+
+### 🛠️ Tehchnologies and Instruments
 <!--
 **deeanop/deeanop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
