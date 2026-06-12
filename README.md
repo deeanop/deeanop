@@ -63,8 +63,6 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=deeanop&theme=tokyo-night" alt="Activity Graph" width="100%" />
 </p>
 
-### 📊 Project Portfolio Status
-
 <!-- START_SECTION:portfolio_status -->
 ### 📊 Project Portfolio Status
 
