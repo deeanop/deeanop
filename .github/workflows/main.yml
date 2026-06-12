@@ -26,8 +26,8 @@ jobs:
 
           # Scanează descrierile după formatul tău exact cu emoji
           FINISHED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟢 Finished"))] | length')
-          PROGRESS=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟡 In progesss"))] | length')
-          UNDER_CONSTRUCTION=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("⚠️ Under Construction"))] | length')
+          PROGRESS=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟡 In progess"))] | length')
+          UNDER_CONSTRUCTION=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("⚠️ Under construction"))] | length')
           PLANNED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🔴 Planned"))] | length')
           
           # Generează tabelul curat în format Markdown (folosim \n pentru rânduri noi)
