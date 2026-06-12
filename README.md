@@ -12,6 +12,7 @@ I'm Deean. Welcome to my journey into Computer Engineering!
   <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
 </a>
 </p>
+[E-mail](mailto:deeanoprea55544@gmail.com).
 
 ### 💻 About me
 I'm currently studying Computer Engineering at Polytechnic University of Timisoara, and my primary focus areas are hardware description, embedded systems, networks, and digital signal processing. I'm also interested in software development, data mining and machine learning.
