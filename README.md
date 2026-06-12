@@ -67,10 +67,10 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 
 | Status | Total Projects | Progress Bar |
 | :--- | :---: | :--- |
-| ![🟢Finished](https://img.shields.io/badge/Status-Finished-brightgreen?style=flat-square&logo=github) | **7** | ![Progress](https://geps.dev/progress/100?dangerColor=red&warningColor=orange&successColor=green) |
-| ![🟡In Progress](https://img.shields.io/badge/Status-In%20Progress-blue?style=flat-square&logo=git) | **21** | ![Progress](https://geps.dev/progress/60) |
-| ![⚠️Under Construction](https://img.shields.io/badge/Status-Under%20Construction-orange?style=flat-square&logo=visualstudiocode) | **5** | ![Progress](https://geps.dev/progress/30) |
-| ![🔴Planned](https://img.shields.io/badge/Status-Planned-red?style=flat-square&logo=lighthouse) | **12** | ![Progress](https://geps.dev/progress/0) |
+| ![🟢Finished](Status-Finished-brightgreen?style=flat-square&logo=github) | **7** | ![Progress](https://geps.dev/progress/100?dangerColor=red&warningColor=orange&successColor=green) |
+| ![🟡In Progress](Status-In%20Progress-blue?style=flat-square&logo=git) | **21** | ![Progress](https://geps.dev/progress/60) |
+| ![⚠️Under Construction](Status-Under%20Construction-orange?style=flat-square&logo=visualstudiocode) | **5** | ![Progress](https://geps.dev/progress/30) |
+| ![🔴Planned](Status-Planned-red?style=flat-square&logo=lighthouse) | **12** | ![Progress](https://geps.dev/progress/0) |
 <!--
 **deeanop/deeanop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
