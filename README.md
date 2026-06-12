@@ -66,6 +66,14 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 ### 📊 Project Portfolio Status
 
 <!-- START_SECTION:portfolio_status -->
+### 📊 Project Portfolio Status
+
+| Status | Total Projects |
+| :--- | :---: |
+| 🟢 Finished | **4** |
+| 🟡 In Progress | **0** |
+| ⚠️ Under Construction | **0** |
+| 🔴 Planned | **9** |
 <!-- END_SECTION:portfolio_status -->
 
 **deeanop/deeanop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
