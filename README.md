@@ -21,6 +21,38 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 *   🧠 Enhancing knowledge in embedded systems, digital communications, machine learning
 
 ### 🛠️ Technologies and Instruments
+
+#### 🚀 Languages & Core Frameworks
+<p align="left">
+  <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/MATLAB-%23ED7B24.svg?style=for-the-badge&logo=MathWorks&logoColor=white" alt="MATLAB" />
+  <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+</p>
+
+#### 📟 Embedded, HW & Simulation
+<p align="left">
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white" alt="Arduino" />
+  <img src="https://img.shields.io/badge/Simulink-%23ED7B24.svg?style=flat-square&logo=MathWorks&logoColor=white" alt="Simulink" />
+  <img src="https://img.shields.io/badge/PlatformIO-%23F5A25D.svg?style=flat-square&logo=PlatformIO&logoColor=white" alt="PlatformIO" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+</p>
+
+#### 🌐 Networking & Automation
+<p align="left">
+  <img src="https://img.shields.io/badge/GNS3-%231E2A38.svg?style=flat-square&logo=GNS3&logoColor=white" alt="GNS3" />
+  <img src="https://img.shields.io/badge/Scapy-%2300599C.svg?style=flat-square&logo=Python&logoColor=white" alt="Scapy" />
+  <img src="https://img.shields.io/badge/Wireshark-167EE6?style=flat-square&logo=Wireshark&logoColor=white" alt="Wireshark" />
+</p>
+
+---
+
+### 📊 GitHub Stats & Activity
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=deeanop&show_icons=true&theme=tokyonight&count_private=true" alt="Deean's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deeanop&layout=compact&theme=tokyonight" alt="Deean's Top Languages" width="48%" />
+</p>
 <!--
 **deeanop/deeanop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
