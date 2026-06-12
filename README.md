@@ -58,11 +58,10 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 </p>
 
 #### 🏆 My GitHub Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deeanop&theme=tokyonight&column=4" alt="Deean's Trophies" width="100%" />
-</p>
 
-![Profile Views](https://komarev.com/badge/counter/github/?username=deeanop&color=blue&style=flat-square)
+<img src="https://github-profile-trophy.vercel.app/?username=deeanop&theme=tokyonight" alt="Deean's Trophies" />
+
+![Profile Views](https://img.shields.io/badge/dynamic/json?color=blue&label=Profile%20Views&query=%24.value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fdeeanop%2Fvisits&style=flat-square&logo=github)
 
 #### 📈 Activity Trend
 <p align="center">
