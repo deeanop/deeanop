@@ -57,11 +57,6 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deeanop&layout=compact&theme=tokyonight" alt="Deean's Top Languages" width="48%" />
 </p>
 
-#### 🏆 My GitHub Trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=deeanop&theme=tokyonight" alt="Deean's Trophies" />
-
-![Profile Views](https://img.shields.io/badge/dynamic/json?color=blue&label=Profile%20Views&query=%24.value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fdeeanop%2Fvisits&style=flat-square&logo=github)
 
 #### 📈 Activity Trend
 <p align="center">
