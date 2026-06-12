@@ -56,6 +56,18 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
   <img src="https://github-readme-stats.vercel.app/api?username=deeanop&show_icons=true&theme=tokyonight&count_private=true" alt="Deean's GitHub Stats" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deeanop&layout=compact&theme=tokyonight" alt="Deean's Top Languages" width="48%" />
 </p>
+
+#### 🏆 My GitHub Trophies
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=deeanop&theme=tokyonight&column=4" alt="Deean's Trophies" width="100%" />
+</p>
+
+![Profile Views](https://komarev.com/badge/counter/github/?username=deeanop&color=blue&style=flat-square)
+
+#### 📈 Activity Trend
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deeanop&theme=tokyo-night" alt="Activity Graph" width="100%" />
+</p>
 <!--
 **deeanop/deeanop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
