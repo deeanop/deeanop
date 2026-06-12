@@ -26,7 +26,7 @@ jobs:
 
           # Scanează descrierile după formatul tău exact cu emoji
           FINISHED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟢 Finished"))] | length')
-          PROGRESS=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟡 In progess"))] | length')
+          PROGRESS=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟡 In progress"))] | length')
           UNDER_CONSTRUCTION=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("⚠️ Under construction"))] | length')
           PLANNED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🔴 Planned"))] | length')
           
