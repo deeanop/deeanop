@@ -1,0 +1,41 @@
+name: Update Portfolio Status
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch GitHub Project Stats by Emoji Description
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          USERNAME="deeanop"
+
+          FINISHED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟢 Finished"))] | length')
+          PROGRESS=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🟡 In progesss"))] | length')
+          UNDER_CONSTRUCTION=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("⚠️ Under Construction"))] | length')
+          PLANNED=$(gh repo list $USERNAME --json description --jq '[.[] | select(.description // "" | contains("🔴 Planned"))] | length')
+          
+
+          TABLE="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| ⚠️ Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |"
+          
+          sed -i "/<!-- START_SECTION:portfolio_status -->/,/<!-- END_SECTION:portfolio_status -->/ {//!d}" README.md
+          sed -i "/<!-- START_SECTION:portfolio_status -->/a $TABLE" README.md
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-updated portfolio status stats" && git push)
