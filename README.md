@@ -13,6 +13,7 @@ I'm Deean. Welcome to my journey into Computer Engineering!
 </a>
 </p>
   ✉ Gmail: https://mail.google.com/mail/?view=cm&fs=1&to=deeanoprea55544@gmail.com
+  
   ✉ Outlook (Student UPT): https://outlook.live.com/default.aspx?rru=compose&to=deean.oprea@student.upt.ro
 
 ### 💻 About me
