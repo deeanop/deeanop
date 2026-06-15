@@ -30,6 +30,7 @@ jobs:
           PROGRESS=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("prog"))] | length')
           UNDER_CONSTRUCTION=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("construction"))] | length')
           PLANNED=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("planned"))] | length')
+          FORKED=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("forked"))] | length')                                               
           
           # Generează tabelul curat în format Markdown
           TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| ⚠️ Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |\n| 🔵 Forked | **$FORKED** |"
