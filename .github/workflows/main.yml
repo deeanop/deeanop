@@ -32,7 +32,7 @@ jobs:
           PLANNED=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("planned"))] | length')
           
           # Generează tabelul curat în format Markdown
-          TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| ⚠️ Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |"
+          TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| ⚠️ Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |\n| 🔵 Forked | **$FORKED** |"
           
           # Șterge tot ce era vechi între ancore și injectează noul tabel
           sed -i "/<!-- START_SECTION:portfolio_status -->/,/<!-- END_SECTION:portfolio_status -->/ {//!d}" README.md
