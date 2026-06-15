@@ -17,7 +17,7 @@ I'm Deean. Welcome to my journey into Computer Engineering!
   ✉ Outlook (Student UPT): https://outlook.live.com/default.aspx?rru=compose&to=deean.oprea@student.upt.ro
 
 ### 💻 About me
-I'm currently studying Computer Engineering at Polytechnic University of Timisoara, and my primary focus areas are hardware description, embedded systems, networks, and digital signal processing. I'm also interested in software development, data mining and machine learning.
+I'm currently studying Computer Engineering at Polytechnic University of Timisoara, and my primary focus areas are hardware description, embedded systems, networks, and digital signal processing. I'm also interested in software development, data mining, operating systems and machine learning.
 
 *   📍 Location: Timișoara, România
 *   🚀 Presently working on developing and automating complex networks
