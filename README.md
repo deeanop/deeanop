@@ -72,9 +72,9 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 | Status | Total Projects |
 | :--- | :---: |
 | 🟢 Finished | **8** |
-| 🟡 In Progress | **21** |
-| ⚠️ Under Construction | **4** |
-| 🔴 Planned | **10** |
+| 🟡 In Progress | **22** |
+| ⚠️ Under Construction | **3** |
+| 🔴 Planned | **12** |
 <!-- END_SECTION:portfolio_status -->
 
 
