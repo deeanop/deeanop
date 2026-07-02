@@ -15,17 +15,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch GitHub Project Stats by Emoji Description
+      - name: Fetch Stats and Generate Languages Chart
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           USERNAME="deeanop"
-          
-          # Forțăm sistemul să recunoască corect caracterele text
           export LANG=C.UTF-8
 
-          # AM ADĂUGAT --limit 1000! Acum va scana toate proiectele tale.
-          # Căutăm doar cuvintele cheie importante, fără emoji, ca să nu existe erori de citire.
+          # --- GENERARE STATISTICI PORTFOLIO ---
           FINISHED=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("finished"))] | length')
           PROGRESS=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("prog"))] | length')
           UNDER_CONSTRUCTION=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("construction"))] | length')
@@ -34,18 +31,61 @@ jobs:
           MVP=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("mvp"))] | length') 
           LAB=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("lab"))] | length') 
           
-          # Generează tabelul curat în format Markdown
           TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| 🟠 Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |\n| 🔵 Forked | **$FORKED** |\n| 🟣 MVP | **$MVP** |\n| ⚫ Lab | **$LAB** | "
           
-          # Șterge tot ce era vechi între ancore și injectează noul tabel
           sed -i "/<!-- START_SECTION:portfolio_status -->/,/<!-- END_SECTION:portfolio_status -->/ {//!d}" README.md
           sed -i "/<!-- START_SECTION:portfolio_status -->/a $TABEL" README.md
+
+          # --- GENERARE DIAGRAMĂ LIMBAJE (NATIVĂ) ---
+          # Preluăm toate limbajele din proiectele tale non-fork
+          LANG_DATA=$(gh repo list $USERNAME --limit 1000 --source --json languages --jq '[.[].languages[]] | group_by(.name) | map({name: .[0].name, size: (map(.size) | add)}) | sort_by(-.size)')
+          TOTAL_SIZE=$(echo "$LANG_DATA" | jq '[.[].size] | add')
+
+          # Culori prestabilite pentru limbaje comune
+          declare -A COLORS=( ["C"]="#555555" ["Python"]="#3572A5" ["Java"]="#b07219" ["VHDL"]="#adb2cb" ["SystemVerilog"]="#DAE1C2" ["Verilog"]="#b2b7f8" ["C++"]="#f34b7d" )
+
+          DIAGRAMA="### 📊 Most Used Languages\n\n"
+          
+          # Construim bara orizontală (HTML progress bar effect)
+          BARA="<div style='display: flex; width: 100%; height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 15px;'>"
+          LEGENDA="<table style='width: 100%; border: none;'><tr>"
+          count=0
+
+          # Procesăm primele 8 limbaje
+          while read -r name size; do
+            if [ -z "$name" ] || [ "$TOTAL_SIZE" -eq 0 ]; then break; fi
+            
+            # Calcul procentaj
+            PERCENT=$(awk "BEGIN {print ($size / $TOTAL_SIZE) * 100}")
+            PERCENT_ROUNDED=$(printf "%.2f" "$PERCENT")
+            
+            # Verificăm dacă procentajul e vizibil (peste 0.5%)
+            if (( $(echo "$PERCENT < 0.5" | bc -l) )); then continue; fi
+
+            COLOR=${COLORS[$name]:-"#858585"} # Culoare fallback dacă nu e în listă
+            
+            # Adăugăm segmentul în bară
+            BARA="$BARA<div style='background: $COLOR; width: $PERCENT_ROUNDED%; height: 100%;' title='$name: $PERCENT_ROUNDED%'></div>"
+            
+            # Adăugăm în legendă
+            LEGENDA="$LEGENDA<td style='border: none; padding: 4px;'><span style='color: $COLOR;'>●</span> $name ($PERCENT_ROUNDED%)</td>"
+            
+            count=$((count+1))
+            if [ $((count % 2)) -eq 0 ]; then LEGENDA="$LEGENDA</tr><tr>"; fi
+          done < <(echo "$LANG_DATA" | jq -r '.[] | "\(.name) \(.size)"')
+
+          BARA="$BARA</div>"
+          LEGENDA="$LEGENDA</tr></table>"
+          
+          DIAGRAMA_FINALA="$DIAGRAMA$BARA\n$LEGENDA"
+
+          # Injectăm diagrama în README între noile ancore
+          sed -i "/<!-- START_SECTION:languages_chart -->/,/<!-- END_SECTION:languages_chart -->/ {//!d}" README.md
+          sed -i "/<!-- START_SECTION:languages_chart -->/a $DIAGRAMA_FINALA" README.md
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          
-          # Verifică dacă s-a schimbat ceva
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-updated portfolio status stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-updated portfolio and languages stats" && git push)
