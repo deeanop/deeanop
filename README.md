@@ -56,7 +56,7 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 
 ### 📊 GitHub Stats & Activity
 <p align="center">
-  ![](https://github-readme-stats.vercel.app/api/top-langs/?username=numele_tau_de_utilizator&theme=radical&hide_border=true)
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=numele_tau_de_utilizator&language_count=8)](https://github.com/anuraghazra/github-readme-stats)
 </p>
 
 
