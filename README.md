@@ -57,6 +57,10 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 ### 📊 GitHub Stats & Activity
 <p align="center">
   <!-- START_SECTION:languages_chart -->
+### 📊 Most Used Languages
+
+<div style='display: flex; width: 100%; height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 15px;'><div style='background: #858585; width: 100.00%; height: 100%;' title='null: 100.00%'></div></div>
+<table style='width: 100%; border: none;'><tr><td style='border: none; padding: 4px;'><span style='color: #858585;'>●</span> null (100.00%)</td></tr></table>
   <!-- END_SECTION:languages_chart -->
 </p>
 
