@@ -56,7 +56,7 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 
 ### 📊 GitHub Stats & Activity
 <p align="center">
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=deeanop&language_count=8)](https://github.com/anuraghazra/github-readme-stats)
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=deeanop&layout=compact&language_count=8)](https://github.com/anuraghazra/github-readme-stats)
 </p>
 
 
