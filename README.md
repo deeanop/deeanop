@@ -56,7 +56,7 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 
 ### 📊 GitHub Stats & Activity
 <p align="center">
-  <img src="https://metrics.lecoq.io/deeanop?base=0&plugin_languages=1&plugin_languages_sections=most-used&plugin_languages_details=percentage" alt="Limbaje utilizate" />
+  <img src="https://raw.githubusercontent.com/deeanop/deeanop/main/profile-summary-card-output/vivid-gradient/0-most-used-languages.svg" alt="Most Used Languages" />
 </p>
 
 
