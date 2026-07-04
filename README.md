@@ -55,7 +55,6 @@ I'm currently studying Computer Engineering at Polytechnic University of Timisoa
 ---
 
 ### 📊 GitHub Stats & Activity
-<p align="center">
 #### 📊 Most Used Languages
 
 [![Top Langs](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=deeanop&layout=pie)](https://github.com/deeanop/github-readme-stats)
