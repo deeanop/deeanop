@@ -31,7 +31,7 @@ jobs:
           MVP=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("mvp"))] | length') 
           LAB=$(gh repo list $USERNAME --limit 1000 --json description --jq '[.[] | select(.description // "" | ascii_downcase | contains("lab"))] | length') 
           
-          TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🟢 Finished | **$FINISHED** |\n| 🟡 In Progress | **$PROGRESS** |\n| 🟠 Under Construction | **$UNDER_CONSTRUCTION** |\n| 🔴 Planned | **$PLANNED** |\n| 🔵 Forked | **$FORKED** |\n| 🟣 MVP | **$MVP** |\n| ⚫ Lab | **$LAB** | "
+          TABEL="### 📊 Project Portfolio Status\n\n| Status | Total Projects |\n| :--- | :---: |\n| 🏆 Finished | **$FINISHED** |\n| ⚙️ In Progress | **$PROGRESS** |\n| 🛠️ Under Construction | **$UNDER_CONSTRUCTION** |\n| 📌 Planned | **$PLANNED** |\n| 🔀 Forked | **$FORKED** |\n| 🚀 MVP | **$MVP** |\n| 📋 Lab | **$LAB** | "
           
           sed -i "/<!-- START_SECTION:portfolio_status -->/,/<!-- END_SECTION:portfolio_status -->/ {//!d}" README.md
           sed -i "/<!-- START_SECTION:portfolio_status -->/a $TABEL" README.md
